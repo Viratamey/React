@@ -1,13 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import FunctionsVsClass from "./FunctionsVsClasses/FunctionsVsClass";
+import CounterComponent from "./ErrorBoundary/CounterComponent";
+import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import FormValidation from "./ControlledUncontrolledComponents/ControlledFormValidation";
+import ControlledFormValidation from "./ControlledUncontrolledComponents/ControlledFormValidation";
+import UncontrolledFormValidation from "./ControlledUncontrolledComponents/UncontrolledFormValidation";
+// import App from "./SiblingDataSharing/Common Parent Component/App";
+import ClassLifecycle from "./All lifecycle methods/ClassLifecycle";
+import FunctionalHooks from "./All lifecycle methods/FunctionalHooks";
+import SiblingDataSharingApp from "./SiblingDataSharing/Using Context API/SiblingDataSharingApp";
+import SwitchPageComponent from "./Switching Component/SwitchPageComponent";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Use <tagname></tagname> for elements that contain content.
+// Use <tagname/> (or <tagname>) for self-closing elements that do not have content.
+
 root.render(
   <React.StrictMode>
-    <App />
+    {
+        // <FunctionsVsClass students={9}/>
+
+        // <ErrorBoundary>
+        //     <CounterComponent>
+        //
+        //     </CounterComponent>
+        // </ErrorBoundary>
+
+        // <ControlledFormValidation/>
+        // <UncontrolledFormValidation/>
+
+        // <SiblingDataSharingApp/>
+
+        // <ClassLifecycle/>
+        // <FunctionalHooks/>
+
+        <SwitchPageComponent page={"contact"}/>
+
+    }
   </React.StrictMode>
 );
 
