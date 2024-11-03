@@ -1,0 +1,6 @@
+-   **React**: The core library for building user interfaces.
+- **BrowserRouter**: A component that wraps the application and enables routing capabilities. 
+- **Route**: Used to define a route in your application.-   
+- **Routes**: A container for `Route` elements; replaces the `Switch` component from earlier versions. 
+- **Link**: Creates links that enable navigation between different routes.   
+- **Home, About, NotFound**: Custom components representing different pages in the app.

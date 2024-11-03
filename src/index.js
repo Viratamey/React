@@ -13,6 +13,11 @@ import ClassLifecycle from "./All lifecycle methods/ClassLifecycle";
 import FunctionalHooks from "./All lifecycle methods/FunctionalHooks";
 import SiblingDataSharingApp from "./SiblingDataSharing/Using Context API/SiblingDataSharingApp";
 import SwitchPageComponent from "./Switching Component/SwitchPageComponent";
+import store from "./Redux/store";
+import ReduxApp from "./Redux/ReduxApp";
+import {Provider} from "react-redux";
+import RouterApp from "./Router/RouterApp";
+import HOC from "./Higher Order Components/HOC";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -38,8 +43,15 @@ root.render(
         // <ClassLifecycle/>
         // <FunctionalHooks/>
 
-        <SwitchPageComponent page={"contact"}/>
+        // <SwitchPageComponent page={"contact"}/>
 
+      // <Provider store={store}>
+      //     <ReduxApp />
+      // </Provider>
+
+        // <RouterApp/>
+
+        <HOC/>
     }
   </React.StrictMode>
 );
